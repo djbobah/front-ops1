@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <div class="container">
+      <header>
+        <h1>Генератор случайных пользователей</h1>
+        <p class="subtitle">
+          Демонстрационная страница для тестирования функциональности
+        </p>
+      </header>
+
+      <div class="controls">
+        <button class="generate-btn" onclick="generateUser()">
+          Сгенерировать пользователя
+        </button>
+        <button class="clear-btn" onclick="clearAllUsers()">
+          Очистить список
+        </button>
+      </div>
+
+      <div class="counter">
+        Сгенерировано пользователей: <span id="userCount">0</span>
+      </div>
+
+      <div class="users-grid" id="usersContainer">
+        <!-- Сгенерированные пользователи будут здесь -->
+      </div>
+
+      <footer>
+        <p>Демо-сайт &copy; 2023 | Генератор тестовых данных</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+    <script></script>
   </body>
 </html>
